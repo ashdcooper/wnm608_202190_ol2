@@ -1,0 +1,14 @@
+
+:root {
+	--color-offwhite: #f4f4f4;
+}
+
+body {
+	background-color: var(--color-offwhite);
+}
+
+img {
+	width: 300px;
+}
+
+.grid-gap: 2rem
