@@ -14,3 +14,8 @@ https://ashleycooper-2024.com/aau/wnm608_202190_ol2/cooper.ashley/styleguide/ind
 Assignment 5.1 - Forms CSS Updates and Corrections
 
 https://ashleycooper-2024.com/aau/wnm608_202190_ol2/cooper.ashley/index.html
+
+
+Midterm - Assignment 6.1
+
+https://ashleycooper-2024.com/aau/wnm608_202190_ol2/cooper.ashley/styleguide/index.html
