@@ -100,6 +100,9 @@ strong {
 	vertical-align: text-bottom;
 }
 
+.hidden {
+	display: none;
+}
 
 
 
@@ -328,24 +331,108 @@ background-color: var(--color-neutral-light);
 }
 
 /*FORMS */
+.form-control {
+	margin: 1em 0;
+}
 
-.form-input {
+.form-select>select,
+.hotdog input,
+.hotdog,
+.form-button,
+.form-input,
+.form-item {
 	display: inline-block;
     background-color: transparent;
     border-width: 0;
-    padding: 0.2em 0.5em;
     font-size: inherit;
     -webkit-appearance: none;
     color: inherit;
     width: 100%;
-    border-bottom: 1px solid var(--color-neutral-medium);
     outline: 0;
 }
 
-.form-input:focus {
-	border-bottom-color:var(--color-main-medium);
+.form-input {
+    border-bottom: 1px solid var(--color-neutral-medium);
+    padding: 0.5em 1em;
 }
 
+.form-input:focus {
+	border-bottom-color:var(--color-main-light;
+}
+
+.form-label {
+	font-size: 0.8em;
+	color: var(--color-neutral-medium);
+	display: block;
+	width: 100%;
+}
+
+.form-button {
+    background-color: var(--color-neutral-light);
+    border-radius: 0.2em;
+    cursor: pointer;
+    text-align: center;
+    padding: 0.5em 1em;
+}
+.form-button:hover {
+	text-decoration: none;
+}
+.form-button:active {
+	background-color: var(--color-main-light);
+}
+
+
+.hotdog {
+	background-color: var(--color-neutral-light);
+	border-radius: 2em;
+	padding: 0.5em 1.5em;
+	display: flex;
+}
+
+.hotdog.dark {
+	background-color: var(--color-neutral-dark);
+	color: var(--color-neutral-light);
+}
+
+.hotdog.light {
+	background-color: var(--color-white);
+	color: var(--color-black);
+}
+
+.form-select>select {
+	padding: 0.5em 1em;
+	background-color: var(--color-neutral-light);
+	border-radius: 0.3em;
+	cursor: pointer;
+}
+
+
+/*Toggle*/
+
+.toggle label {
+	font-size: 1.3rem;
+    display: inline-block;
+    width: 2em;
+    height: 1em;
+    border: 0.1em solid var(--color-neutral-medium);
+    border-radius: 1em;
+    position: relative;
+}
+
+.toggle label::after {
+	content: '';
+	display: inline-block;
+	width: 0.8em;
+	height: 0.8em;
+	border-radius: 1em;
+	position: absolute;
+	background-color: var(--color-neutral-light);
+	transition: all 0.3s;
+}
+
+.toggle.input:checked + label::after {
+	transform: translateX(1em);
+}
 
 
 /*Color Boxes*/
