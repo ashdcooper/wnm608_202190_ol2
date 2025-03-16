@@ -25,8 +25,6 @@
 		</div>
 	</div>
 
-<?php echo "Test Update"; ?>
-
 
 </body>
 </html>
