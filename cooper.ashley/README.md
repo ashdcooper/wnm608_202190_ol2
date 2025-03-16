@@ -23,6 +23,6 @@ https://ashleycooper-2024.com/aau/wnm608_202190_ol2/cooper.ashley/styleguide/ind
 
 Assignment 7.1 - Main Site Documents
 
-https://ashleycooper-2024.com/aau/ixd608OL1FA24/cooper.ashley/product_list.php
+https://ashleycooper-2024.com/aau/wnm608_202190_ol2/cooper.ashley/product_list2.php
 
-https://ashleycooper-2024.com/aau/ixd608OL1FA24/cooper.ashley/product_item.php?id=1
+https://ashleycooper-2024.com/aau/wnm608_202190_ol2/cooper.ashley/product_item.php?id=1
