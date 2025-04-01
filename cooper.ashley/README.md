@@ -26,3 +26,8 @@ Assignment 7.1 - Main Site Documents
 https://ashleycooper-2024.com/aau/wnm608_202190_ol2/cooper.ashley/product_list2.php
 
 https://ashleycooper-2024.com/aau/wnm608_202190_ol2/cooper.ashley/product_item.php?id=1
+
+Module 8
+
+https://ashleycooper-2024.com/aau/wnm608_202190_ol2/cooper.ashley/notes/readingdata.php
+https://ashleycooper-2024.com/aau/wnm608_202190_ol2/cooper.ashley/admin/users.php

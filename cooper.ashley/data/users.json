@@ -1,0 +1,23 @@
+[
+	{
+		"name":"Ashley Cooper",
+		"type":"Student",
+		"email":"acooper17@art.edu",
+		"classes":[606,608]
+	}
+
+		{
+		"name":"Bob Cooper",
+		"type":"Student",
+		"email":"bcooper23@art.edu",
+		"classes":[616,608]
+	}
+
+		{
+		"name":"Jane Cooper",
+		"type":"Student",
+		"email":"jcooper5@art.edu",
+		"classes":[606,628]
+	}
+
+]

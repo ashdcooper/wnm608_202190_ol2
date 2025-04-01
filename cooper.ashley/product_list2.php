@@ -3,7 +3,7 @@
 	<meta charset="UTF-8">
 	<title>Wine Cellar</title>
 
-<?php include "parts/meta.php"; ?>
+	<?php include "parts/meta.php"; ?>
 
 </head>
 <body>

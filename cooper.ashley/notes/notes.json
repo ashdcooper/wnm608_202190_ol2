@@ -1,0 +1,21 @@
+brackets
+[]
+braces 
+{}
+parenthesese
+()
+carrots
+<>
+
+A JSON file either starts with an array or an object.
+
+{
+	"notes":[
+		"A JSON file always starts with either an array [] or an object {}.",
+		"A JSON file cannot have comments, so put any comments in this array",
+		"Commas go between items in an array or object, but there should never be a trailing comma",
+		"All property names must be in quotation marks",
+		"All string quotation marks must be double quotes",
+		"Use a linter like jsonlint.com to check your JSON, to validate code"
+	]
+}
