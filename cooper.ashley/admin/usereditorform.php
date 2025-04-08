@@ -6,7 +6,7 @@ $users = file_get_json("../data/users.json");
 
 function showUserForm($user, $id) {
 // heredoc
-echo <<<html
+echo <<<html;
 <nav class="nav nav-crumbs">
 	<ul>
 		<li><a href="admin/users.php">Back</a></li>
