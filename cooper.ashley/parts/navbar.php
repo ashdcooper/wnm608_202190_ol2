@@ -8,8 +8,9 @@
 		<nav class="nav nav-flex flex-none">
 			<ul>
 				<li><a href="index.php">Home</a></li>
-				<li><a href="product_list2.php">Wine Cellar</a></li>
 				<li><a href="about.php">About</a></li>
+				<li><a href="product_list2.php">Wine Cellar</a></li>
+				<li><a href="product_cart.php">Cart</a></li>
 			</ul>
 		</nav>
 	</div>

@@ -5,6 +5,16 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>CSS Styleguide</title>
 
+
+	<link rel="stylesheet" href="../lib/css/styleguide.css">
+	<link rel="stylesheet" href="../lib/css/gridsystem.css">
+	<link rel="stylesheet" href="../css/storetheme.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.typekit.net/akb1piq.css">
+
+
 	<style>
     /* CSS for the table for troubleshooting styling issue */
     .table {
@@ -27,13 +37,23 @@
     }
     </style>
 
-	<link rel="stylesheet" href="../lib/css/styleguide.css">
-	<link rel="stylesheet" href="../lib/css/gridsystem.css">
-	<link rel="stylesheet" href="../css/storetheme.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="https://use.typekit.net/akb1piq.css">
+    <style>
+	/*Figure*/
+	.figure {
+		margin: 0;
+		background-color: var(--color-white);
+	}
+	.figure img {
+	width: 100%;
+	vertical-align: text-bottom;
+	}
+	.figure figcaption {
+		padding: 1em;
+	}
+
+    </style>
+
+
 
 
 
@@ -80,6 +100,7 @@
 						<li><a href="#checkboxes">Check Boxes</a></li>
 					</ul>
 					<li><a href="#color-palette">Color Palette</a></li>
+					<li><a href="#figures">Figures</a></li>
 
 				</ul>
 
@@ -492,7 +513,6 @@
             </div>
         </div>
 
-        <!-- Main Colors -->
         <div class="col-xs-12 col-md-4">
             <div class="card soft" style="background-color: var(--color-main-light);">
                 <p>Main Light: #d19c9c</p>
@@ -509,7 +529,6 @@
             </div>
         </div>
 
-        <!-- Alternative Colors -->
         <div class="col-xs-12 col-md-4">
             <div class="card soft" style="background-color: var(--color-alternative-blush);">
                 <p>Alternative Blush: #cb6e6e</p>
@@ -528,7 +547,111 @@
     </div>
 </div>
 
+<div class="container">
+<h2 id="figures">Figures</h2>
 
-	
+	<div class="card">
+		<h3>Basic Figures</h3>
+
+		<figure class="figure">
+			<img src="https://fakeimg.pl/400x400?text=product&font=bebas" alt="">
+			<figcaption>Product</figcaption>
+		</figure>
+
+		</div>
+
+	<h3>Figure Grid</h3>
+
+	<div class="grid gap">
+			<div class="col-xs-12 col-md-4">
+				<figure class="figure">
+			<img src="https://fakeimg.pl/400x400?text=product&font=bebas" alt="">
+			<figcaption>Product</figcaption>
+				</figure>
+			</div>
+			<div class="col-xs-12 col-md-4">
+				<figure class="figure">
+			<img src="https://fakeimg.pl/400x400?text=product&font=bebas" alt="">
+			<figcaption>Product</figcaption>
+				</figure>
+			</div>
+			<div class="col-xs-12 col-md-4">
+				<figure class="figure">
+			<img src="https://fakeimg.pl/400x400?text=product&font=bebas" alt="">
+			<figcaption>Product</figcaption>
+				</figure>
+			</div>
+	</div>
+
+	<h3>Product Grid</h3>
+
+	<div class="grid gap">
+			<div class="col-xs-12 col-md-4">
+				<figure class="figure product">
+			<img src="https://fakeimg.pl/400x400?text=product&font=bebas" alt="">
+			<figcaption>
+				<div>Product Name</div>
+				<div>$24.99</div>
+			</figcaption>
+				</figure>
+			</div>
+			<div class="col-xs-12 col-md-4">
+				<figure class="figure product">
+			<img src="https://fakeimg.pl/400x400?text=product&font=bebas" alt="">
+			<figcaption>
+				<div>Product Name</div>
+				<div>$24.99</div>
+			</figcaption>
+				</figure>
+			</div>
+			<div class="col-xs-12 col-md-4">
+				<figure class="figure product">
+			<img src="https://fakeimg.pl/400x400?text=product&font=bebas" alt="">
+			<figcaption>
+				<div>Product Name</div>
+				<div>$24.99</div>
+			</figcaption>
+				</figure>
+			</div>
+	</div>
+
+	<h3>Product Overlay</h3>
+
+	<div class="grid gap">
+			<div class="col-xs-12 col-md-4">
+				<figure class="figure product-overlay">
+			<img src="https://fakeimg.pl/400x400?text=product&font=bebas" alt="">
+			<figcaption>
+				<div class="caption-body">
+					<div>Product Name</div>
+					<div>$24.99</div>
+				</div>
+			</figcaption>
+				</figure>
+			</div>
+			<div class="col-xs-12 col-md-4">
+				<figure class="figure product-overlay">
+			<img src="https://fakeimg.pl/400x400?text=product&font=bebas" alt="">
+			<figcaption>
+				<div class="caption-body">
+					<div>Product Name</div>
+					<div>$24.99</div>
+				</div>
+			</figcaption>
+				</figure>
+			</div>
+			<div class="col-xs-12 col-md-4">
+				<figure class="figure product-overlay">
+			<img src="https://fakeimg.pl/400x400?text=product&font=bebas" alt="">
+			<figcaption>
+				<div class="caption-body">
+					<div>Product Name</div>
+					<div>$24.99</div>
+				</div>
+			</figcaption>
+				</figure>
+			</div>
+	</div>
+</div>
 </body>
 </html>
