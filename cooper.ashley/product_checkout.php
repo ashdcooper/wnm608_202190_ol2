@@ -1,4 +1,8 @@
-<html lang="en">
+<?php
+
+include_once "lib/php/functions.php";
+
+?><html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<title>Checkout Page</title>
@@ -12,7 +16,7 @@
 	<div class="container">
 		<div class="card soft" id="checkout-page">
   <h2>Checkout</h2>
-  <form>
+  <form style="text-align:left;">
 
     <h3>Billing Information</h3>
     <div class="form-control">
@@ -71,7 +75,7 @@
       <label class="form-label">Card Number</label>
       <input type="text" class="form-input" placeholder="1234 5678 9012 3456">
     </div>
-    <div class="form-control display-flex">
+    <div class="form-control">
       <div class="flex-stretch">
         <label class="form-label">Expiration Date</label>
         <input type="text" class="form-input" placeholder="MM/YY">
@@ -92,7 +96,7 @@
 
     <div class="form-control">
       <!-- <button type="submit" class="form-button">Place Order</button> -->
-      <a href="product_confirmation.php">Complete Checkout</a>
+      <a href="product_confirmation.php" style="background-color: var(--color-neutral-light);border-radius: 0.2em;cursor: pointer;text-align: center;padding: 0.5em 1em;text-decoration: none;font-weight: initial;">Complete Checkout</a>
     </div>
 
   </form>

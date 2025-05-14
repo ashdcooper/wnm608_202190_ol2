@@ -27,7 +27,10 @@ $product = makeQuery(makeConn(),"SELECT * FROM `products` WHERE `id`=".$_GET['id
 				</div>
 			</div>
 			<div class="col-xs-12 col-md-5">
-				<div class="card soft flat">
+				<form class="card soft flat" method="post" action="cart_actions.php?action=add-to-cart">
+
+					<input type="hidden" name="product_id" value="<?= $product->id ?>">
+
 					<div class="card-section">
 						<h2 class="product-name"><?= $product->name ?></h2>
 						<div class="product-price">&dollar;<?= $product->price ?> </div>
@@ -35,8 +38,8 @@ $product = makeQuery(makeConn(),"SELECT * FROM `products` WHERE `id`=".$_GET['id
 
 					<div class="card-section">
 						<label for="product-amount" class="form-label">Amount</label>
-						<div class="form-select" id="product-amount">
-							<select>
+						<div class="form-select">
+							<select id="product-amount" name="product_amount">
 								<option>1</option>
 								<option>2</option>
 								<option>3</option>
@@ -52,9 +55,9 @@ $product = makeQuery(makeConn(),"SELECT * FROM `products` WHERE `id`=".$_GET['id
 					</div>
 
 					<div class="card-section-button">
-						<a href="product_add_to_cart.php?id=<?= $product->id ?>" style="background-color: var(--color-neutral-light);border-radius: 0.2em;cursor: pointer;text-align: center;padding: 0.5em 1em;text-decoration: none;font-weight: initial;">Add To Cart</a>
+						<input type="submit" style="background-color: var(--color-neutral-light);border-radius: 0.2em;cursor: pointer;text-align: center;padding: 0.5em 1em;text-decoration: none;font-weight: initial;" value="Add To Cart">
 					</div>
-				</div>
+				</form>
 			</div>
 
 		</div>

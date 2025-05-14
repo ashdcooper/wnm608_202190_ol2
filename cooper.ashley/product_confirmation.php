@@ -1,4 +1,9 @@
-<html lang="en">
+<?php
+
+include_once "lib/php/functions.php";
+resetCart();
+
+?><html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<title>Confirmation Page</title>

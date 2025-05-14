@@ -335,7 +335,9 @@ background-color: var(--color-neutral-light);
 /*FORMS */
 .form-control {
 	margin: 1em 0;
+	display: flex;
 }
+
 
 .form-select>select,
 .hotdog input,
@@ -360,6 +362,8 @@ background-color: var(--color-neutral-light);
 
 .form-input:focus {
 	border-bottom-color:var(--color-main-light;
+	flex: 1 1 auto;
+	margin-right: 40em;
 }
 
 .form-label {
@@ -367,6 +371,8 @@ background-color: var(--color-neutral-light);
 	color: var(--color-neutral-medium);
 	display: block;
 	width: 100%;
+	flex: none;
+	padding-right: 1em;
 }
 
 .form-button {
@@ -375,6 +381,10 @@ background-color: var(--color-neutral-light);
     cursor: pointer;
     text-align: center;
     padding: 0.5em 1em;
+}
+
+.form-button.inline{
+	width: initial;
 }
 .form-button:hover {
 	text-decoration: none;

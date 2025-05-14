@@ -1,4 +1,12 @@
-<html lang="en">
+<?php 
+
+
+include_once "lib/php/functions.php";
+include_once "parts/templates.php";
+
+
+
+ ?><html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<title>Wine Cellar</title>
@@ -17,8 +25,6 @@
 
 			<?php
 
-			include_once "lib/php/functions.php";
-			include_once "parts/templates.php";
 
 			$result = makeQuery(
 				makeConn(),

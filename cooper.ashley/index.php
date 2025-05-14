@@ -1,4 +1,8 @@
-<html lang="en">
+<?php
+
+include_once "lib/php/functions.php";
+
+?><html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<title>About</title>
