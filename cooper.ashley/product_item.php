@@ -55,7 +55,7 @@ $product = makeQuery(makeConn(),"SELECT * FROM `products` WHERE `id`=".$_GET['id
 					</div>
 
 					<div class="card-section-button">
-						<input type="submit" style="background-color: var(--color-neutral-light);border-radius: 0.2em;cursor: pointer;text-align: center;padding: 0.5em 1em;text-decoration: none;font-weight: initial;" value="Add To Cart">
+						<input type="submit" style="background-color: var(--color-main-light);border-radius: 1em;cursor: pointer;text-align: center;padding: 0.5em 1em;text-decoration: none;font-weight: initial;" value="Add To Cart">
 					</div>
 				</form>
 			</div>

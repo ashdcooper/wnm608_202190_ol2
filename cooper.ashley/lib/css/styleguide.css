@@ -295,7 +295,7 @@ strong {
     width: 100%;
     text-align: center;
     padding: 1em;
-    color: var(--color-main-dark;
+    color: var(--color-main-dark);
 }
 
 @media (min-width: 768px) {
@@ -336,10 +336,16 @@ background-color: var(--color-neutral-light);
 .form-control {
 	margin: 1em 0;
 	display: flex;
+	flex-direction: column;
 }
 
 
-.form-select>select,
+.flex-stretch.display-flex {
+	gap: 0.5em;
+}
+
+
+.form-select select,
 .hotdog input,
 .hotdog,
 .form-button,
@@ -361,14 +367,14 @@ background-color: var(--color-neutral-light);
 }
 
 .form-input:focus {
-	border-bottom-color:var(--color-main-light;
+	border-bottom-color:var(--color-main-light);
 	flex: 1 1 auto;
 	margin-right: 40em;
 }
 
 .form-label {
 	font-size: 0.8em;
-	color: var(--color-neutral-medium);
+	color: var(--color-main-dark);
 	display: block;
 	width: 100%;
 	flex: none;
@@ -376,22 +382,30 @@ background-color: var(--color-neutral-light);
 }
 
 .form-button {
-    background-color: var(--color-neutral-light);
-    border-radius: 0.2em;
+    display: inline-block;
+    background-color: var(--color-main-medium);
+    color: var(--color-white);
+    border: none;
+    border-radius: 2em;
+    padding: 0.5em 1.5em;
+    font-size: 1em;
     cursor: pointer;
     text-align: center;
-    padding: 0.5em 1em;
+    transition: background-color 0.3s ease;
 }
+
+.form-button:hover {
+    background-color: var(--color-main-light);
+    color: var(--color-black);
+}
+
+.form-button:active {
+    background-color: var(--color-main-dark);
+}
+
 
 .form-button.inline{
 	width: initial;
-}
-.form-button:hover {
-	text-decoration: none;
-}
-.form-button:active {
-	background-color: var(--color-main-light);
-}
 
 
 .hotdog {
