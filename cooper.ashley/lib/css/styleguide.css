@@ -242,6 +242,10 @@ strong {
 	border-radius: 0.5em;
 }
 
+.card.soft.left{
+	text-align: left;
+}
+
 .card.hard {
 	border: 2px solid var(--color-neutral-medium);
 	border-radius: 0.2em;

@@ -29,10 +29,11 @@ function selectAmount($amount=1,$total=10) {
 function cartListTemplate($r,$o){
 	$totalfixed = number_format($o->total,2,'.','');
 	$selectamount = selectAmount($o->amount,10);
+	$thumbnail = $o->thumbnail;
 	return $r.<<<HTML
 	<div class="display-flex" style="padding-bottom: 0.75em;">
 		<div class="flex-none images-thumbs">
-			<img src="../img/<?= $product->thumbnail ?>" alt="">
+			<img src="img/$thumbnail">
 		</div>
 		<div class="flex-stretch" style="padding-left: 0.75em;">
 			<strong>$o->name</strong>
@@ -86,3 +87,30 @@ return <<<HTML
 </div>	
 HTML;
 }
+
+
+function recommendedProducts($a) {
+	$products = array_reduce($a,'productListTemplate');
+	echo <<<HTML
+	<div class="grid gap productlist">$products</div>
+	HTML;
+}
+
+
+function recommendedCategory($cat,$limit=3) {
+	$result = makeQuery(makeConn(),"SELECT * FROM `products` WHERE `category`='$cat' ORDER BY `date_created` DESC LIMIT $limit");
+
+		recommendedProducts($result);
+
+}
+
+function recommendedSimilar($cat,$id=0,$limit=3) {
+	$result = makeQuery(makeConn(),"SELECT * FROM `products` WHERE `category`='$cat' AND `id`<>$id ORDER BY rand() LIMIT $limit");
+
+		recommendedProducts($result);
+
+}
+
+
+
+
