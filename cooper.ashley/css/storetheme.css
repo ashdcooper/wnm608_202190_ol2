@@ -120,11 +120,11 @@ img {
     transform:scale(1.4,1.4);
 }
 
-@media (max-width: 800px) {
+@media (min-width: 800px) {
     .menu-button label { display:none; }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 799px) {
     .product-overlay figcaption {
         position: relative;
         display: block;
