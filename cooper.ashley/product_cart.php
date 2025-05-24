@@ -3,7 +3,7 @@
 include_once "lib/php/functions.php";
 include_once "parts/templates.php";
 
-// $cart = makeQuery(makeConn(),"SELECT * FROM `products` WHERE `id` IN (3,5,7)");
+$cart = getCart();
 
 
 $cart_items = getCartItems();
@@ -22,6 +22,11 @@ $cart_items = getCartItems();
 
 	<div class="container">
 		<h2>In Your Cart</h2>
+
+		<?php 
+
+		if (count($cart)) {
+		?>
 		<div class="grid gap">
 			<div class="col-xs-12 col-md-7">
 				<div class="card soft" style="text-align: left">
@@ -31,9 +36,30 @@ $cart_items = getCartItems();
 			<div class="col-xs-12 col-md-5">
 				<div class="card soft flat" style="text-align: left">
 					<?= cartTotals() ?>
+					<div class="card-section-button">
+	<a href="product_checkout.php" style="background-color: var(--color-neutral-light);border-radius: 0.2em;cursor: pointer;text-align: center;padding: 0.5em 1em;text-decoration: none;font-weight: initial;">Checkout</a>
+</div>	
+				</div>
 			</div>
+
 		</div>
-	</div>
+		<?php
+		} else {
+			?>
+			<div class="card soft">
+				<p>Your Cart is Empty</p>
+			</div>
+			<div class="card soft">
+				<h3>Other Recommendations</h3>
+				<?php 
+				recommendedAnything(6);
+				 ?>
+			</div>
+			<?php
+		}
+		?>
+
+		 
 
 
 </body>

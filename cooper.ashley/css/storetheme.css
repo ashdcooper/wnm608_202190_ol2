@@ -120,9 +120,11 @@ img {
     transform:scale(1.4,1.4);
 }
 
+@media (max-width: 800px) {
+    .menu-button label { display:none; }
+}
 
-
-@media (max-width: 600px) {
+@media (max-width: 400px) {
     .product-overlay figcaption {
         position: relative;
         display: block;
@@ -137,6 +139,33 @@ img {
     .product-overlay .caption-body{
         transform: none;
         padding: 0;
+    }
+
+    .menu-button label { 
+        display:block;
+        padding: 0 1em;
+        font-size: 1.75em;
+    }
+
+    .navbar .nav-flex ul {
+        display: block;
+    }
+
+    .navbar .display-flex {
+        flex-wrap: wrap;
+    }
+
+    .navbar .nav {
+        width: 100%;
+        display: none;
+    }
+
+    .navbar .nav li {
+        line-height: 1.25em;
+    }
+
+    #menu:checked+.navbar .nav {
+        display: block;
     }
 }
 

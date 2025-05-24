@@ -7,6 +7,7 @@
 <link rel="stylesheet" href="lib/css/gridsystem.css">
 <link rel="stylesheet" href="css/storetheme.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="shortcut icon" type="image/x-icon" href="../img/favicon_io/favicon.ico">
 
 
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>

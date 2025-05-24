@@ -1,7 +1,8 @@
 <?php
 
 include_once "lib/php/functions.php";
-
+include_once "parts/templates.php";
+$cart = getCartItems();
 ?><html lang="en">
 <head>
 	<meta charset="UTF-8">
@@ -89,10 +90,16 @@ include_once "lib/php/functions.php";
     <!-- Order Summary (Example placeholder) -->
     <h3>Order Summary</h3>
     <div class="form-control">
-      <p>Item: Example Product</p>
-      <p>Quantity: 1</p>
-      <p>Total: $99.99</p>
+      <?php
+      echo array_reduce($cart,function($r,$o){
+        $totalfixed = number_format($o->total,2,'.','');
+        return $r."<div class='display-flex'>
+        <div class='flex-stretch'>$o->name</div>
+        <div class='flex-none'>&dollar;$totalfixed</div>
+        </div>";
+      }) ?>
     </div>
+    <?= cartTotals(); ?>
 
     <div class="form-control">
       <!-- <button type="submit" class="form-button">Place Order</button> -->

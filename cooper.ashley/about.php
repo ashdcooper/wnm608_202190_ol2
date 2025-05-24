@@ -24,10 +24,8 @@
 						<p>We invite you to explore our cellar, get to know our journey, and experience the richness of a wine brand grounded in biblical meaning and modern excellence.</p>
 
 						<span><strong>Have a question or collaboration idea?</strong></span>
-						<p>Reach out via <a href="mailto:info@watertowinecellar.com">info@watertowinecellar.com</a> or connect with us on social media @watertowinecellar.</p>
-					</div>
-					<div class="card soft">
-						<h3>Connect With Us</h3>
+						<p class="card-section">Reach out via <a href="mailto:info@watertowinecellar.com">info@watertowinecellar.com</a> or connect with us on social media @watertowinecellar.</p>
+						<h3 class="card-section">Connect With Us</h3>
 						<div style="font-size: 1.8em; display: flex; justify-content: center; gap: 1.5em; margin-top: 1em; margin-bottom: 1em;">
 							<a href="https://www.instagram.com/watertowinecellar" target="_blank" style="color:#833AB4;"><i class="fab fa-instagram"></i></a>
 							<a href="https://www.facebook.com/watertowinecellar" target="_blank" style="color:#3b5998;"><i class="fab fa-facebook"></i></a>

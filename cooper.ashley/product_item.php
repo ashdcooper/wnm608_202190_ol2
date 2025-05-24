@@ -64,7 +64,7 @@ $product = makeQuery(makeConn(),"SELECT * FROM `products` WHERE `id`=".$_GET['id
 		</div>
 
 		<div class="grid gap">
-			<div class="col-xs-12 col-md-7">
+			<div class="col-xs-12 col-md-12">
 				<div class="card hard medium">
 					<p><?= $product->description ?></p>
 				</div>

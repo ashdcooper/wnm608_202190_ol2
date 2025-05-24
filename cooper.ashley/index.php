@@ -6,7 +6,7 @@ include_once "parts/templates.php";
 ?><html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>About</title>
+	<title>Home</title>
 
 	<?php include "parts/meta.php"; ?>
 </head>

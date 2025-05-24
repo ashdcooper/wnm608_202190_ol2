@@ -9,6 +9,7 @@
 	--grid-gap: 1em;
 	grid-gap: var(--grid-gap);
 	gap: var(--grid-gap);
+	margin-bottom: 1em;
 }
 
 

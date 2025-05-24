@@ -80,7 +80,7 @@ strong {
 
 
 
-.display-flex{ display:flex; }
+.display-flex{ display:flex; flex-wrap: wrap;}
 .display-inline-flex{ display:inline-flex; }
 .display-block{ display:block; }
 .display-inline-block{ display:inline-block; }
@@ -92,7 +92,7 @@ strong {
 .flex-justify-center {justify-content: center;}
 
 .flex-column { flex-direction:column; }
-
+.flex-wrap { flex-wrap:wrap; }
 
 
 /* Small Classes */
@@ -212,6 +212,7 @@ strong {
 	background-color: var(--color-neutral-dark);
 	color: var(--color-white);
 	line-height: var(--header-height);
+	margin-bottom: 1em;
 }
 
 .navbar h1 {
@@ -263,7 +264,10 @@ strong {
 	padding: 0;
 }
 
-
+[class*='col-']>.card {
+	height: 100%;
+	margin: 0;
+}
 
 /* .view-window {
 	height: 50vh;
