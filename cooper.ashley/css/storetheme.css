@@ -54,6 +54,7 @@ img {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     transition: all 0.3s;
+    padding-bottom: 1em;
 }
 
 .product.figure img {;
@@ -65,6 +66,11 @@ img {
 .productlist a {
     text-decoration: none;
     font-weight: initial;
+}
+
+.productlist figcaption {
+    margin-left: 0.5em;
+    margin-top: 0.5em;
 }
 
 .product.figure:hover {
